@@ -12,7 +12,9 @@ class AuthGate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ↓↓↓↓↓ 教師のメールアドレスをここに設定してください ↓↓↓↓↓
-    const String teacherEmail = 'e1923069@oit.ac.jp';
+    const  teacherlist =['e1923069@oit.ac.jp','e1923075@oit.ac.jp'];
+    /*const String teacherEmail1 = 'e1923069@oit.ac.jp';
+    const String teacherEmail2 = 'e1923075@ad.oit.ac.jp';*/
 
     return StreamBuilder<User?>(
       stream: AuthService().authStateChanges,
@@ -27,7 +29,7 @@ class AuthGate extends StatelessWidget {
           // ログインしているユーザーの情報を取得
           final user = snapshot.data!;
           // メールアドレスを比較し、教師か生徒かを判断
-          if (user.email == teacherEmail) {
+          if (user.email == teacherlist[0] || user.email == teacherlist[1]) {
             // 教師なら教師用画面へ
             return const TeacherHomePage();
           } else {
