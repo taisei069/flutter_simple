@@ -39,3 +39,4 @@ class MyApp extends StatelessWidget {
 //daka1です
 //難しい
 //お腹がいっぱいです
+//daka2です
