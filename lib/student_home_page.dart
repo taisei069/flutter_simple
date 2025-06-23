@@ -12,6 +12,25 @@ class StudentHomePage extends StatefulWidget {
 class _StudentHomePageState extends State<StudentHomePage> {
   bool tasks1 = false;
   bool tasks2 = false;
+  @override
+  void initState() {
+    super.initState();
+    _loadProgress();
+  }
+
+  Future<void> _loadProgress() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
+    final doc = await FirebaseFirestore.instance.collection('progress').doc(user.uid).get();
+    //ドキュメントが存在するかチェック
+    if (doc.exists) {
+      final data = doc.data() as Map<String, dynamic>;
+      setState(() {
+        tasks1 = data['task1'] ?? false;
+        tasks2 = data['task2'] ?? false;
+      });
+    }
+  }
   void saveProgress() async {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return;
