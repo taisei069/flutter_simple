@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1067648000379",
+    "project_id": "hoge-695bf",
+    "storage_bucket": "hoge-695bf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067648000379:android:7776fa781f452fa7bc9dde",
+        "android_client_info": {
+          "package_name": "com.example.flutter_simple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067648000379-lqcs0gcihqpgjvu1cr4ciqe4mfbg9i5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa2hd7w6mxIGXPFJCJ59auCJjyEZS8XvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067648000379-lqcs0gcihqpgjvu1cr4ciqe4mfbg9i5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
