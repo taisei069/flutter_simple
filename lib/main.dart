@@ -37,3 +37,4 @@ class MyApp extends StatelessWidget {
 
 //お腹が空きました
 //お腹がいっぱいです
+//あいうえお
