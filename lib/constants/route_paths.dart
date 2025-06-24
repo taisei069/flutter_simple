@@ -23,4 +23,10 @@ class RoutePaths {
   static const st_normal_quake1 = '/st_normal_quake1';
   static const st_normal_quake2 = '/st_normal_quake2';
   static const st_normal_quake3 = '/st_normal_quake3';
+// ✅ ログイン画面へのパス
+  static const rogin_1 = '/rogin_1';
+  /*上の部分でログイン画面に遷移するので不要
+  static const rogin_2 = '/rogin_2';
+  static const student = '/student';
+  static const teacher = '/teacher';*/
 }

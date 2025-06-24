@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'auth_service.dart';
 import 'auth_gate.dart';
 import 'firebase_options.dart';
+//app_router.dartの機能を使うためにインポート
+import 'app_router.dart';
 
 void main() async {
   // main関数で非同期処理を呼び出すためのおまじない
@@ -20,14 +22,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'ロールベース認証アプリ',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      // 最初の画面はAuthGateを指定
-      home: const AuthGate(),
+      // 最初の画面はappRouterで定義したルーティングに従う
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false
     );
   }
 }

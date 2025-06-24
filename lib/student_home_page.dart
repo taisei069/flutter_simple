@@ -4,6 +4,10 @@ import 'auth_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'detail_page.dart';
+//下の2文はgo_routerを使うために必要
+import 'package:go_router/go_router.dart';
+import 'package:flutter_simple/constants/route_paths.dart';
+
 class StudentHomePage extends StatefulWidget {
   const StudentHomePage({super.key});
 @override
@@ -93,7 +97,12 @@ Widget build(BuildContext context) {
       Navigator.push(context, MaterialPageRoute
       (builder: (context) => const DetailPage(studentName:'アプリの使い方')));
 
-    }, child:Text('アプリの使い方'))],),
+    }, child:Text('アプリの使い方')),
+    ElevatedButton(
+      onPressed:() => context.go(RoutePaths.genre),
+      child: const Text('セレクト画面'),
+       ),
+    ],),
       )
     
 

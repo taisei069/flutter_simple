@@ -21,6 +21,10 @@ class Rogin extends StatelessWidget {
               onPressed: () => context.go(RoutePaths.genre), 
               child: Text('Next'),
             ),
+            ElevatedButton(
+              onPressed: () => context.go(RoutePaths.rogin_1), 
+              child: Text('ログイン'),
+            ),
           ],
         )
       ),
