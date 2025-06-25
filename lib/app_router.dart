@@ -12,6 +12,7 @@ import 'package:flutter_simple/screens/quake/easy_quake/st_study_easy_quake/st_s
 import 'package:flutter_simple/screens/quake/easy_quake/st_study_easy_quake/st_study_easy_quake_3.dart';
 import 'package:flutter_simple/screens/quake/easy_quake/st_problem_easy_quake/st_problem_easy_quake_1.dart';
 import 'package:flutter_simple/screens/quake/easy_quake/st_problem_easy_quake/st_problem_easy_quake_2.dart';
+import "package:flutter_simple/screens/quake/easy_quake/st_problem_easy_quake/st_problem_easy_quake_answer.dart";
 import 'package:flutter_simple/screens/quake/normal_quake/normal_quake.dart';
 import 'package:flutter_simple/screens/quake/normal_quake/st_study_normal_quake/st_study_normal_quake_1.dart';
 import 'package:flutter_simple/screens/quake/normal_quake/st_study_normal_quake/st_study_normal_quake_2.dart';
@@ -37,8 +38,9 @@ final GoRouter appRouter = GoRouter(
     GoRoute(path: '/st_easy_quake1', builder: (context, state) => St_easy_quake1()),
     GoRoute(path: '/st_easy_quake2', builder: (context, state) => St_easy_quake2()),
     GoRoute(path: '/st_easy_quake3', builder: (context, state) => St_easy_quake3()),
-    GoRoute(path: '/st_pro_easy_quake1', builder: (context, state) => StProblemEasyQuake1()),
-    GoRoute(path: '/st_pro_easy_quake2', builder: (context, state) => StProblemEasyQuake2()),
+    GoRoute(path: '/st_problem_easy_quake_1', builder: (context, state) => StProblemEasyQuake1()),
+    GoRoute(path: '/st_problem_easy_quake_2', builder: (context, state) => StProblemEasyQuake2()),
+    GoRoute(path:'/st_problem_easy_quake_answer', builder: (context, state) => StProblemEasyQuakeAnswer()),
     GoRoute(path: '/normal_quake', builder: (context, state) => Normal_quake()),
     GoRoute(path: '/st_normal_quake1', builder: (context, state) => St_normal_quake1()),
     GoRoute(path: '/st_normal_quake2', builder: (context, state) => St_normal_quake2()),

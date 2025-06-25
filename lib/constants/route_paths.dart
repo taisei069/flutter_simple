@@ -17,6 +17,7 @@ class RoutePaths {
   // ✅ 問題ページ用（命名統一）
   static const st_problem_easy_quake_1 = '/st_problem_easy_quake_1';
   static const st_problem_easy_quake_2 = '/st_problem_easy_quake_2';
+  static const st_problem_easy_quake_answer = '/st_problem_easy_quake_answer';
 
   // ✅ 通常モード
   static const normal_quake = '/normal_quake';
