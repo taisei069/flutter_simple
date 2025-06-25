@@ -8,8 +8,8 @@ class PageB extends StatelessWidget {
 
   //進むボタンを押したとき
   push(BuildContext context){
-    //画面Cへ進む
-    context.push('/c');
+    //学習画面へ進む
+    context.push('/step');
   }
 
   //戻るボタンを押したとき

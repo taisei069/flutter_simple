@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sample_m/page_a.dart';
 import 'package:sample_m/page_b.dart';
-import 'package:sample_m/page_c.dart';
-import 'package:sample_m/page_d.dart';
-import 'package:sample_m/page_e.dart';
-import 'package:sample_m/page_f.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sample_m/stepview.dart';
 
 
 main(){
@@ -34,25 +31,9 @@ main(){
           path: '/b',
           builder: (context, state) => const PageB(),
         ),
-        //page_c
         GoRoute(
-          path: '/c',
-          builder: (context, state) => const PageC(),
-        ),
-        //page_d
-        GoRoute(
-          path: '/d',
-          builder: (context, state) => const PageD(),
-        ),
-        //page_e
-        GoRoute(
-          path: '/e',
-          builder: (context, state) => const PageE(),
-        ),
-        //page_f
-        GoRoute(
-          path: '/f',
-          builder: (context, state) => const PageF(),
+          path: '/step',
+          builder: (context, state) => const PageStep(),
         ),
       ]
     );
